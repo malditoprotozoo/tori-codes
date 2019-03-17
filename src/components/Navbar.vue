@@ -34,4 +34,7 @@
     #icon {
         max-width: 50px;
     }
+    .bg-light {
+        background-color: rgba(249, 251, 255, 0.3) !important;
+    }
 </style>
