@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img id="logo" alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Navbar from "./components/Navbar";
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Navbar
   }
 }
 </script>
@@ -23,9 +22,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-#logo {
-  max-width: 300px;
+.navbar-light .navbar-nav .nav-link {
+  color: #e93ea4 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e93ea4 !important;
+  font-weight: bolder;
 }
 </style>
