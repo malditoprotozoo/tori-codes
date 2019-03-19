@@ -1,11 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
-import BootstrapVue from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+import Buefy from 'buefy';
+import VueRouter from 'vue-router';
+import VueTyperPlugin from 'vue-typer';
+import 'buefy/dist/buefy.css';
 
 Vue.config.productionTip = false;
-Vue.use(BootstrapVue);
+Vue.use(VueRouter);
+Vue.use(Buefy);
+Vue.use(VueTyperPlugin);
 
 new Vue({
   render: h => h(App),
